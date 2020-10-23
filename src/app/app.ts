@@ -1,6 +1,18 @@
 /**
- * Temp
+ * Main class for the app
  */
-export function asd(): void {
-  console.log("hi");
+export class GameApp {
+  /**
+   * Creates the game app
+   */
+  constructor() {
+    console.log("GameApp is ready to go");
+  }
+
+  /**
+   * temp
+   */
+  test(): void {
+    console.log("temp..");
+  }
 }

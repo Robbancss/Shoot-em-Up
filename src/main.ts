@@ -1,7 +1,10 @@
-const start: number = Date.now();
-import("./app/app").then(() => {
-  const waitingTimeTo3: number = 3000 - (Date.now() - start);
+import("./app/app").then((app) => {
+  const myGame = new app.GameApp();
+});
+
+const splash = document.querySelector(".splash");
+document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
-    console.log("We waited: ", waitingTimeTo3);
-  }, waitingTimeTo3);
+    splash.classList.add("splash-display-none");
+  }, 2000);
 });
